@@ -1,0 +1,37 @@
+.about-me{
+    width: 100%;
+    height: 70vh;
+    background-color: grey;
+}
+
+.about-me-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 32px;
+    padding: 40px;
+    background-color: lightblue;
+}
+
+.about-me-header {
+    font-size: 48px;
+    grid-column: 1 / 3;
+
+}
+
+.about-me-text {
+    font-size: 20px;
+    grid-column: 1 / 2; /* left column */
+
+}
+
+.skills-container {
+    padding: 24px;
+    border-radius: 12px;
+    grid-column: 2 / 3; /* right column */
+
+}
+
+.skills-items li {
+    margin: 10px 0;
+}

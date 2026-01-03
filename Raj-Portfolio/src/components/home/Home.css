@@ -1,0 +1,19 @@
+.home-container {
+    height: 70vh;
+    width: 100%;
+    border: 1px solid black; /* remove later to get rid of scrollbar */
+    text-align: center;
+    padding-top: 200px;
+}
+
+.home-name-header{
+    font-size: 60px;
+}
+
+.home-location-text{
+    font-size: 30px;
+}
+
+.home-description{
+    font-size: 20px;
+}
