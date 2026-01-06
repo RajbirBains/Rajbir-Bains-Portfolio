@@ -53,13 +53,13 @@ const HomeNavbar = () => {
 
                 </li>
                 <li className = "nav-item">
-                    <a href="#Experience" className="nav-link-item">
+                    <a href="#experience" className="nav-link-item">
                         Experience
                     </a>
                 </li>
 
                 <li className = "nav-item">
-                    <a href="#Projects" className="nav-link-item">
+                    <a href="#projects" className="nav-link-item">
                         Projects
                     </a>
                 </li>

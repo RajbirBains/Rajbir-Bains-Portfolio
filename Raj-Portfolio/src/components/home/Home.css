@@ -1,5 +1,5 @@
 .home-container {
-    height: 70vh;
+    min-height: auto;
     width: 100%;
     /* border: 1px solid black; remove later to get rid of scrollbar */
     text-align: center;
@@ -16,4 +16,8 @@
 
 .home-description{
     font-size: 20px;
+}
+
+.home-spacer{
+    height: 60vh;
 }

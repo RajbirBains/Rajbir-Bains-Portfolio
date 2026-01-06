@@ -38,6 +38,7 @@ const AboutMe = () => {
                     </ul>
                 </div>
             </div>  
+            <div className="about-me-spacer"></div>
         </div>
 
     )
