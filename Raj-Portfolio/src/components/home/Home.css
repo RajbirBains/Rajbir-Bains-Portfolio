@@ -1,7 +1,7 @@
 .home-container {
     height: 70vh;
     width: 100%;
-    border: 1px solid black; /* remove later to get rid of scrollbar */
+    /* border: 1px solid black; remove later to get rid of scrollbar */
     text-align: center;
     padding-top: 200px;
 }

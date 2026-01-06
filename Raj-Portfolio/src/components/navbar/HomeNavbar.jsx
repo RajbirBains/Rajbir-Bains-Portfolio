@@ -1,20 +1,59 @@
 import { Navbar, Nav, Container, NavbarToggle } from 'react-bootstrap';
 import { NavLink } from "react-router-dom";
 
+import RLogo from '../../assets/navbar-logo.png';
+
+import './HomeNavbar.css';
 
 const HomeNavbar = () => {
     return (
-        <Navbar bg="dark" variant="dark" expand="lg">
-            <Container fluid>
-                <NavbarToggle aria-controls="navbarScroll" />
-                    <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: '100px' }} navbarScroll> 
-                        <NavLink to="/" className="nav-link">Home</NavLink>
-                        <NavLink to="/aboutme" className="nav-link">About Me</NavLink>
-                        <NavLink to="/experience" className="nav-link">Experience</NavLink>
-                        <NavLink to="/projects" className="nav-link">Projects</NavLink>
-                    </Nav>
-            </Container>
-        </Navbar>
+
+
+        // <Navbar bg="dark" variant="dark" expand="lg">
+        //     <Container fluid>
+        //         <NavbarToggle aria-controls="navbarScroll" />
+        //             <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: '100px' }} navbarScroll> 
+        //                 <NavLink to="/" className="nav-link">Home</NavLink>
+        //                 <NavLink to="/aboutme" className="nav-link">About Me</NavLink>
+        //                 <NavLink to="/experience" className="nav-link">Experience</NavLink>
+        //                 <NavLink to="/projects" className="nav-link">Projects</NavLink>
+        //             </Nav>
+        //     </Container>
+        // </Navbar>
+
+
+        <nav className="home-navbar">
+            <a href="#home" className="nav-logo-link">
+                {/* Find a better logo maybe depending on final site design */}
+                <img src={RLogo} className='nav-logo' alt="R"></img>
+            </a>
+            {/* <div className="nav-logo">LogoFiller</div> */}
+            <div className="nav-menu-toggle" id="mobile-menu-icon">
+                <span className="bar"></span>
+                <span className="bar"></span>
+                <span className="bar"></span>
+            </div>
+
+            <ul className="nav-links">
+                <li className = "nav-item">
+                    <a href="#about" className="nav-link-item">
+                        About
+                    </a>
+
+                </li>
+                <li className = "nav-item">
+                    <a href="#Experience" className="nav-link-item">
+                        Experience
+                    </a>
+                </li>
+
+                <li className = "nav-item">
+                    <a href="#Projects" className="nav-link-item">
+                        Projects
+                    </a>
+                </li>
+            </ul>
+        </nav>
     )
 }
 
