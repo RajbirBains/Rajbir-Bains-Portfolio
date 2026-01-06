@@ -25,7 +25,7 @@ const AboutMe = () => {
     // }, [aboutMeText]);
      
     return (
-        <div className="about-me" id="about">
+        <div className="about-me-section" id="about">
             <div className="about-me-container">
                 <h2 className="about-me-header">About Me</h2>
                 <p className="about-me-text">{aboutMeTextFile}</p>

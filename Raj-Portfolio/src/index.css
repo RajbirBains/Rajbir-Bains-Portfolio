@@ -71,5 +71,8 @@ button:focus-visible {
     margin: 0;
     padding: 0;
     /* box-sizing: border-box; */
-    background-color: rgb(50, 55, 61);
+}
+
+body{
+  background-color: rgb(50, 55, 61);
 }

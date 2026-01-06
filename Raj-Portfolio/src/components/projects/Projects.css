@@ -1,0 +1,14 @@
+.projects-spacing {
+    height: 70px;
+}
+
+.projects-container {
+    min-height: auto;
+    width: 100%;
+    /* border: 1px solid black; remove later to get rid of scrollbar */
+    text-align: center;
+}
+
+.projects-spacer{
+    height: 70vh;
+}

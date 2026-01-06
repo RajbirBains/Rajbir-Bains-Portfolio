@@ -1,7 +1,10 @@
+.experience-section{
+    background-color: lightblue;
+}
+
 .experience-container{
     width: 100%;
-    height: 70vh;
-    background-color: lightblue;
+    height: 50vh;
 }
 
 .experience-spacer{

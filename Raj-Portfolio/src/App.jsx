@@ -5,6 +5,7 @@ import AboutMe from './components/aboutme/AboutMe'
 import Home from './components/home/Home.jsx'
 import HomeNavbar from './components/navbar/HomeNavbar.jsx'
 import Experience from './components/experience/Experience.jsx'
+import Projects from './components/projects/Projects.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,6 +16,7 @@ function App() {
       <Home></Home>
       <AboutMe></AboutMe>
       <Experience></Experience>
+      <Projects></Projects>
     </>
   )
 }
