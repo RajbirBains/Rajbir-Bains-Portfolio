@@ -1,11 +1,22 @@
 import { Navbar, Nav, Container, NavbarToggle } from 'react-bootstrap';
 import { NavLink } from "react-router-dom";
+import { useState } from 'react';
 
-import RLogo from '../../assets/navbar-logo.png';
+import RLogo from '../../assets/images/navbar-logo.png';
 
 import './HomeNavbar.css';
 
 const HomeNavbar = () => {
+
+    // State to track if the menu is active
+    const [isActive, setIsActive] = useState(false);
+
+
+      // Toggle the menu state when clicked
+    const toggleMenu = () => {
+        setIsActive(prevState => !prevState);
+    };
+
     return (
 
 
@@ -28,13 +39,13 @@ const HomeNavbar = () => {
                 <img src={RLogo} className='nav-logo' alt="R"></img>
             </a>
             {/* <div className="nav-logo">LogoFiller</div> */}
-            <div className="nav-menu-toggle" id="mobile-menu-icon">
+            <div className="nav-menu-toggle" id="mobile-menu-icon" onClick={toggleMenu}>
                 <span className="bar"></span>
                 <span className="bar"></span>
                 <span className="bar"></span>
             </div>
 
-            <ul className="nav-links">
+            <ul className={`nav-links ${isActive ? 'active' : ''}`}>
                 <li className = "nav-item">
                     <a href="#about" className="nav-link-item">
                         About

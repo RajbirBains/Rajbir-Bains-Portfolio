@@ -4,6 +4,7 @@
     justify-content: space-between;
     align-items: center;
     /* background-color: lightblue; */
+    background-color: transparent;
     padding: 0.5rem 1rem;
     position: fixed;
     width: 100%; /* Move items to right */
@@ -14,7 +15,6 @@
     display: flex;
     margin: 0;
     padding: 0;
-    
 }
 
 .nav-logo{
@@ -24,6 +24,7 @@
 
 .nav-links li {
     margin: 0 1rem;
+    background-color: transparent;
 }
 
 .nav-links a {
@@ -59,7 +60,8 @@
         display: none;
         flex-direction: column;
         width: 100%;
-        background-color: white;
+        /* background-color: white; */
+        background-color: transparent;
         position: absolute;
         top: 90px;
         left: 0px;
