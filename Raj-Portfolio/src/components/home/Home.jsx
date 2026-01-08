@@ -1,5 +1,6 @@
 import './Home.css'
-
+import githubLogo from '../../assets/images/github-mark-white.png';
+import linkedInLogo from '../../assets/images/linkedIn-icon.svg';
 
 const Home = () => {
     return (
@@ -8,6 +9,14 @@ const Home = () => {
                 <h1 className='home-name-header'>Rajbir Bains</h1>
                 <h2 className='home-location-text'>Location</h2>
                 <p className='home-description'>Software Developer</p>
+            </div>
+            <div className='home-links'>
+                <a href='https://github.com/RajbirBains' title='Github Repo' target='_blank' rel='noopener noreferrer'>
+                    <img className='home-github-icon' src = {githubLogo} alt='github' height="100px" width="100px"></img>
+                </a>
+                <a href='www.linkedin.com/in/rajbir-bains-4b7a7a215' title='LinkedIn Profile' target='_blank' rel='noopener noreferrer'>
+                    <img className='home-linkedin-icon' src = {linkedInLogo} alt='linkedin' height="100px" width="100px"></img>
+                </a>
             </div>
             <div className='home-spacer'></div>
         </div>

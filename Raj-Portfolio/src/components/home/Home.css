@@ -25,3 +25,10 @@
 .home-spacer{
     height: 60vh;
 }
+
+.home-links{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+}
