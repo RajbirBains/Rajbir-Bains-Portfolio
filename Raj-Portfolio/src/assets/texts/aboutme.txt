@@ -1,1 +1,3 @@
-Hello, this is just a test to see if getting text works.
+Hi, my name is Rajbir Bains. 
+I’m a Computer Science graduate from Simon Fraser University who enjoys building clean, functional software. 
+I like solving real-world problems, learning new technologies, and writing code that is easy to understand and maintain.
