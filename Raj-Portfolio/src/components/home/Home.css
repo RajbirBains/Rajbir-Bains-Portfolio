@@ -1,5 +1,5 @@
 .home-section{
-    background-color: rgb(50, 55, 61);
+    background-color: var(--clr-home-background);
 }
 
 .home-container {
@@ -26,9 +26,24 @@
     height: 60vh;
 }
 
-.home-links{
+/* .home-links{
     display: flex;
     justify-content: center;
     gap: 50px;
     margin-top: 30px;
+} */
+
+
+.home-resume-button-container{
+    display: flex;
+    justify-content: center;
+}
+
+.download-resume-button{
+    height: auto;
+    width: auto;
+    border-radius: 5px;
+    /* padding: 0.5em 1em; */
+    padding: 12px 25px 15px;
+    background-color: rgb(77, 77, 77);
 }

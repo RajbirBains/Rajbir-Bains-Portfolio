@@ -67,12 +67,22 @@ button:focus-visible {
   }
 } */
 
+
+/* global variables */
+:root{
+    --clr-home-background: rgb(50, 55, 61);
+    --clr-about-background: rgb(70, 78, 88);
+    --clr-experience-background: rgb(111, 122, 134);
+    --clr-projects-background: rgb(37, 50, 66);
+    --clr-white: #ffffff;
+}
+
 *{
     margin: 0;
     padding: 0;
     /* box-sizing: border-box; */
 }
 
-body{
+/* body{
   background-color: rgb(50, 55, 61);
-}
+} */

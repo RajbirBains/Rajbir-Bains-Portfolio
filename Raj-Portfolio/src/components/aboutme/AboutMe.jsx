@@ -1,4 +1,3 @@
-import React, { use } from "react";
 import './AboutMe.css';
 
 import aboutMeTextFile from '../../assets/texts/aboutme.txt?raw';
@@ -11,7 +10,7 @@ import IntelliJLogo from '../../assets/images/IntelliJ-icon.svg';
 
 import StackIcon from "tech-stack-icons";
 
-import {useState, useEffect} from 'react';
+import {useState} from 'react';
 
 const AboutMe = () => {
     const text = "Hello. This is just a placeholder for the About Me section.";
@@ -28,24 +27,24 @@ const AboutMe = () => {
                                         .trimStart();
     const paragraphs = normalized.split('\n\n');
 
-    // useEffect(() => {
-    //         // The path is relative to the 'public' folder
-    //     fetch(filepath)
-    //     .then((response) => response.text())
-    //     .then((textContent) => {
-    //         setAboutMeText(textContent);
-    //     })
-    //     .catch((error) => {
-    //         console.error("Error fetching file:", error);
-    //         setAboutMeText('Could not get About Me text. I am Rajbir Bains, a software developer though.');
-    //     });
-    // }, [aboutMeText]);
-     
     return (
         <div className="about-me-section" id="about">
             <div className="about-me-container">
                 <h2 className="about-me-header">About Me</h2>
                 <p className="about-me-text">{normalized}</p>
+            </div>
+
+            {/* TODO: Maybe switch about-me-container to a grid and have this section to the right of about me description */}
+            <div className='about-me-links-container'>
+                <h4 className='find-me-header'>Find me on:</h4>
+                    <div className='home-links'>
+                        <a href='https://github.com/RajbirBains' title='Github Repo' target='_blank' rel='noopener noreferrer'>
+                            <img className='home-github-icon' src = {githubLogo} alt='github' height="50px" width="50px"></img>
+                        </a>
+                        <a href='www.linkedin.com/in/rajbir-bains-4b7a7a215' title='LinkedIn Profile' target='_blank' rel='noopener noreferrer'>
+                            <img className='home-linkedin-icon' src = {linkedInLogo} alt='linkedin' height="50px" width="50px"></img>
+                        </a>
+                    </div>
             </div>
             <div className="skills-container">
                     <h2 className="skills-header">Technical Skills</h2>
@@ -134,7 +133,6 @@ const AboutMe = () => {
                         </li>
                         <li>
                             <img src={IntelliJLogo} alt="IntelliJ Logo" className="tech-icon"/>
-                            <StackIcon name="intellij" className="tech-icon"/>
                             <p>IntelliJ</p>
                         </li>
                         <li>
@@ -147,15 +145,6 @@ const AboutMe = () => {
                         </li> */}
                     </ul>
             </div>
-            {/* <div className='about-links'>
-                <a href='https://github.com/RajbirBains' title='Github Repo' target='_blank' rel='noopener noreferrer'>
-                    <img className='home-github-icon' src = {githubLogo} alt='github' height="100px" width="100px"></img>
-                </a>
-                <a href='www.linkedin.com/in/rajbir-bains-4b7a7a215' title='LinkedIn Profile' target='_blank' rel='noopener noreferrer'>
-                    <img className='home-linkedin-icon' src = {linkedInLogo} alt='linkedin' height="100px" width="100px"></img>
-                </a>
-                <button className="download-resume-button">Download Resume</button>
-            </div>   */}
             <div className="about-me-spacer"></div>
         </div>
 

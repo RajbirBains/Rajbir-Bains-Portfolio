@@ -1,3 +1,7 @@
+.projects-section{
+    background-color: var(--clr-projects-background);
+}
+
 .projects-spacing {
     height: 70px;
 }
