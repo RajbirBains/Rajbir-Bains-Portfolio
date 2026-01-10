@@ -41,7 +41,7 @@ const AboutMe = () => {
                         <a href='https://github.com/RajbirBains' title='Github Repo' target='_blank' rel='noopener noreferrer'>
                             <img className='home-github-icon' src = {githubLogo} alt='github' height="50px" width="50px"></img>
                         </a>
-                        <a href='www.linkedin.com/in/rajbir-bains-4b7a7a215' title='LinkedIn Profile' target='_blank' rel='noopener noreferrer'>
+                        <a href='https://www.linkedin.com/in/rajbir-bains-4b7a7a215' title='LinkedIn Profile' target='_blank' rel='noopener noreferrer'>
                             <img className='home-linkedin-icon' src = {linkedInLogo} alt='linkedin' height="50px" width="50px"></img>
                         </a>
                     </div>

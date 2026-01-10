@@ -87,3 +87,10 @@
     gap: 50px;
     /* margin-top: 30px; */
 }
+
+/* Mobile responsive adjustments */
+@media screen and (max-width: 900px) {
+    .about-me-container{
+        width: 100%;
+    }
+}
