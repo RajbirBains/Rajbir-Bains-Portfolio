@@ -8,11 +8,80 @@
 
 .projects-container {
     min-height: auto;
-    width: 100%;
+    width: auto;
     /* border: 1px solid black; remove later to get rid of scrollbar */
-    text-align: center;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .projects-spacer{
     height: 70vh;
+}
+
+.project-section-header{
+    font-size: 50px;
+    padding-top: 50px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.project-img{
+    /* position: relative; */
+    height: 300px;
+    width: 450px;
+}
+
+.project-item{
+    position: relative;
+    width: auto;
+    height: 500px;
+    margin: auto;
+}
+
+.img-contain{
+    border-radius: 5px;
+    /* overflow: hidden; */
+    position: relative;
+    right: 400px;
+    /* top: 0; */
+}
+
+.project-name{
+    position:absolute;
+    top: 0px;
+    left: -20px;
+    /* right: 0; */
+    /* bottom: 0; */
+    font-size: 35px;
+    font-weight: 300;
+    color: white;
+    height: 100px;
+    width: 500px;
+}
+
+.project-description{
+    text-align: start;
+    position:absolute;
+    top: 100px;
+    left: 0px;
+    /* right: 0; */
+    /* bottom: 0; */
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+    height: 150px;
+    width: 600px;
+}
+
+.project-tech-stack{
+    position:absolute;
+    top: 250px;
+    left: -390px;
+    font-size: 25px;
+    font-weight: 300;
+    color: black;
+    height: 100px;
+    width: 600px;
 }
