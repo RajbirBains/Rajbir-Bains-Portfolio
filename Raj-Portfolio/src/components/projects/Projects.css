@@ -9,7 +9,8 @@
 
 .projects-container {
     min-height: auto;
-    width: auto;
+    width: 100%;
+    overflow-x: hidden;
     /* border: 1px solid black; remove later to get rid of scrollbar */
     /* text-align: center; */
     display: flex;
@@ -108,7 +109,7 @@
     left: -390px;
     font-size: 20px;
     font-weight: 400;
-    color: #000000;
+    color: #ffffff;
     height: 100px;
     width: 600px;
     transition: color 0.3s ease;
@@ -116,4 +117,41 @@
 
 .project-item:hover .project-tech-stack {
     color: #a855f7;
+}
+
+/* Mobile responsive adjustments */
+@media screen and (max-width: 900px) {
+    .project-item {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .img-contain {
+        right: 0;
+        margin-bottom: 20px;
+    }
+
+    .project-name {
+        position: static;
+        width: 100%;
+        color: #e8e8e8;
+        margin-bottom: 15px;
+    }
+
+    .project-description {
+        position: static;
+        width: 100%;
+        left: 0;
+        margin-bottom: 15px;
+    }
+
+    .project-tech-stack {
+        position: static;
+        width: 100%;
+        max-width: calc(100% - 40px);
+        left: 0;
+        color: var(--clr-accent-primary);
+        overflow-wrap: break-word;
+    }
 }
