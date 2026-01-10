@@ -26,7 +26,7 @@ const Home = () => {
             </div> */}
             <div className='home-resume-button-container'>
                 <a href={Resume} target='_blank' rel='noopener noreferrer'>
-                    <button className='download-resume-button'>Download Resume</button>
+                    <button className='download-resume-button'>Open Resume</button>
                 </a>
             </div>
             <div className='home-spacer'></div>

@@ -20,7 +20,7 @@ const Projects = ()=> {
                         <img className='project-img' src={NHLDataPic} alt='NHL Data Extractor'></img>
                     </div>
                     <h4 className='project-name'>NHL Data Extractor</h4>
-                    <p className='project-description'>Freelance project that extracts specific NHL data, transforms it and inserts it into and Excel sheet</p>
+                    <p className='project-description'>Freelance project that extracts specific NHL data, transforms it and inserts it into an Excel sheet</p>
                     <p className='project-tech-stack'>Python</p>
                 </div>
 

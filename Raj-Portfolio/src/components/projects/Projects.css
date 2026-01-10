@@ -122,7 +122,7 @@
 /* Mobile responsive adjustments */
 @media screen and (max-width: 900px) {
     .project-item {
-        width: 100%;
+        width: 90%;
         height: auto;
         padding: 20px;
     }
@@ -130,6 +130,13 @@
     .img-contain {
         right: 0;
         margin-bottom: 20px;
+        overflow: hidden;
+        max-width: calc(100vw - 40px);
+    }
+
+    .project-img{
+        width: 100%;
+        height: auto;
     }
 
     .project-name {
