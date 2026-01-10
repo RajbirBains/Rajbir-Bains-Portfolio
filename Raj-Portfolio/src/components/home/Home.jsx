@@ -1,6 +1,7 @@
 import './Home.css'
 import githubLogo from '../../assets/images/github-mark-white.png';
 import linkedInLogo from '../../assets/images/linkedIn-icon.svg';
+import LocationLogo from '../../assets/images/location-icon.png';
 
 import Resume from '../../assets/Rajbir_Bains_Resume.pdf';
 
@@ -9,7 +10,10 @@ const Home = () => {
         <div className='home-section' id='home'>
             <div className="home-container">
                 <h1 className='home-name-header'>Rajbir Bains</h1>
-                <h2 className='home-location-text'>Location</h2>
+                <div className='location-section'>
+                    <img className='location-logo' src={LocationLogo}></img>
+                    <h2 className='home-location-text'>Coquitlam, BC</h2>
+                </div>
                 <p className='home-description'>Software Developer</p>
             </div>
             {/* <div className='home-links'>

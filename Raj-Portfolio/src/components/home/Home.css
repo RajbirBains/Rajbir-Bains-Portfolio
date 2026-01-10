@@ -1,25 +1,49 @@
 .home-section{
-    background-color: var(--clr-home-background);
+    background: linear-gradient(135deg, #0f1419 0%, #1a1a2e 100%);
+    color: var(--clr-text-primary);
 }
 
 .home-container {
     min-height: auto;
     width: 100%;
-    /* border: 1px solid black; remove later to get rid of scrollbar */
     text-align: center;
     padding-top: 200px;
 }
 
 .home-name-header{
     font-size: 60px;
+    color: var(--clr-text-primary);
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
 }
 
 .home-location-text{
     font-size: 30px;
+    color: var(--clr-text-secondary);
+    margin-bottom: 30px;
+    margin-right: 10px;
+    font-weight: 500;
 }
 
 .home-description{
     font-size: 20px;
+    color: var(--clr-accent-primary);
+    max-width: 600px;
+    margin: 0 auto 50px;
+    line-height: 1.6;
+}
+
+.location-logo{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    margin-top: 4px;
+}
+
+.location-section{
+    display: flex;
+    justify-content: center;
 }
 
 .home-spacer{
@@ -43,7 +67,18 @@
     height: auto;
     width: auto;
     border-radius: 10px;
-    /* padding: 0.5em 1em; */
     padding: 12px 25px 15px;
-    background-color: rgb(77, 77, 77);
+    background: linear-gradient(135deg, rgba(0, 212, 255, 0.1) 0%, rgba(168, 85, 247, 0.1) 100%);
+    border: 2px solid var(--clr-accent-primary);
+    color: var(--clr-accent-primary);
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.download-resume-button:hover {
+    border-color: var(--clr-accent-secondary);
+    color: var(--clr-accent-secondary);
+    background: linear-gradient(135deg, rgba(168, 85, 247, 0.2) 0%, rgba(0, 212, 255, 0.2) 100%);
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
 }
